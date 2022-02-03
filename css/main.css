@@ -449,8 +449,7 @@ textarea {
 
 /* Mobile */
 @media (max-width: 767px) {
-
-#content_form {
-  width: 100%;
-}
+  #content_form {
+    width: 100%;
+  }
 }
