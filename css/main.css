@@ -327,6 +327,8 @@ li {
 }
 
 #contact_form {
+  display: flex;
+  flex-direction: column;
   width: 375px;
   margin: auto;
   background: #fff;
@@ -396,6 +398,7 @@ textarea {
 
 @media (min-width: 768px) {
   #contact_form {
+    flex-direction: row;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
