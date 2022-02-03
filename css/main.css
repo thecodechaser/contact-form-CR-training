@@ -326,6 +326,131 @@ li {
   list-style: inside url("../media/svg/circle.svg");
 }
 
-.footer {
+#contact_form {
+  width: 375px;
+  margin: auto;
+  background: #fff;
+  height: 100%;
+}
+
+#contact_form p {
+  margin: 120px 24px 73px 24px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 32px;
+  font-family: "Inter", sans-serif;
+  color: #172b4d;
+  line-height: 44px;
+}
+
+#contact_form p span {
+  display: none;
+}
+
+form {
+  margin-left: 24px;
+  margin-right: 24px;
   display: flex;
+  flex-direction: column;
+}
+
+form input {
+  padding: 10px;
+  border: none;
+  outline: none;
+  background: #fdf7f7;
+  border-bottom: 1px solid #dbd8d7;
+  color: #979493;
+}
+
+textarea {
+  border: none;
+  background: #fdf7f7;
+  color: #3c3a39;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+#contact_form button:enabled {
+  background-color: #ff6b00;
+}
+
+#contact_form button:hover {
+  background-color: #fff5e1;
+  transform: scale(1.1);
+  color: #e05304;
+  border: 1px solid #e05304;
+}
+
+#contact_form button:active {
+  background-color: #e05304;
+  color: #f4f1f0;
+}
+
+#contact_form button:disabled {
+  background-color: #f4f1f0;
+  color: #5b5957;
+  border: 1px solid #5b5957;
+}
+
+@media (min-width: 768px) {
+  #contact_form {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 3px solid #dfe1e6;
+  }
+
+  #contact_form p {
+    text-align: unset;
+    margin-top: 130px;
+  }
+
+  #contact_form p span {
+    display: unset;
+  }
+
+  #contact_form form {
+    margin-top: 140px;
+  }
+}
+
+@media (min-width: 1080px) {
+  #contact_form {
+    width: 100%;
+    display: flex;
+    padding: 0 140px;
+  }
+
+  #contact_form p {
+    text-align: unset;
+    margin-top: 130px;
+    font-size: 40px;
+    padding: 20px;
+    width: 47%;
+    line-height: 52px;
+  }
+
+  #contact_form p span {
+    display: unset;
+  }
+
+  #contact_form form {
+    margin-top: 140px;
+    width: 60%;
+  }
+
+  .submitButton {
+    margin: 20px 0 !important;
+  }
+}
+
+
+/* Mobile */
+@media (max-width: 767px) {
+
+#content_form {
+  width: 100%;
+}
 }
