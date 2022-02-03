@@ -326,3 +326,6 @@ li {
   list-style: inside url("../media/svg/circle.svg");
 }
 
+.footer {
+  display: flex;
+}

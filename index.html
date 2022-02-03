@@ -290,18 +290,40 @@
         </div>
       </div>
     </main>
-    <footer class="footer">
-      <div class="contact-form-info">
-        <h2 class="info-text">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
-        <form>
-          <input type="text" placeholder="First Name">
-          <input type="text" placeholder="Last Name">
-          <input type="email" placeholder="Email address">
-          <textarea placeholder="Your message"></textarea>
-          <button type="button">Get in touch</button>
+    <div class="main">
+      <section id="contact_form">
+        <p>
+          I'm always interested in hearing about new projects, so if you'd like
+          to chat please get in <span>touch.</span>
+        </p>
+        <form action="https://formspree.io/f/xwkajypj" id="form" method="post">
+          <input
+            name="Name"
+            id="Name"
+            type="text"
+            placeholder="Full name"
+            maxlength="30"
+          /><br />
+          <input
+            name="Email"
+            id="email"
+            type="email"
+            placeholder="Email address"
+          /><br />
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Enter text here"
+            maxlength="500"
+          ></textarea
+          ><br />
+          <button type="submit" class="submitButton">Get in touch</button>
+          <div id="error"></div>
         </form>
-      </div>
-    </footer>
+      </section>
+    </div>
 
     <script
       src="https://kit.fontawesome.com/e966a3bd22.js"
